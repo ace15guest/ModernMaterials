@@ -29,7 +29,7 @@ def country_picker(driver, countries):
 # # Set path Selenium
 # CHROMEDRIVER_PATH = '/usr/local/bin/chromedriver'
 # s = Service(CHROMEDRIVER_PATH)
-# WINDOW_SIZE = "1920,1080"
+# WINDOW_SIZE = "1920,1080
 #
 # #Create driver
 # driver = webdriver.Chrome(service=s)
