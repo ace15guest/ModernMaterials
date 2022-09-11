@@ -19,7 +19,7 @@ eta = np.log(np.sqrt(1+np.sqrt(f)+f)/(1-np.sqrt(f)))+np.sqrt(3)*np.arctan(np.sqr
 cs = CubicSpline(eta,f,bc_type='clamped')
 # plt.plot(check,one)
 plt.plot(eta,f,'r')
-plt.xlabel('$\eta$ (Non-Dimensional)')
+plt.xlabel('$\eta$ (Dimensionless)')
 plt.ylabel('f($\eta$) (Dimensionless)')
 plt.title('$\eta$ vs f($\eta$)')
 plt.grid(True)

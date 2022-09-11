@@ -7,7 +7,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import pandas as pd
 
-wdi_df = pd.read_csv(r"./Data_Extract_From_World_Development_Indicators/N2O Data, India, Kenya, Thailand.csv")
+wdi_df = pd.read_csv(r"./Data_Extract_From_World_Development_Indicators/N2O Data, India, Kenya, Thailand_Non Percent.csv")
 
 IND = wdi_df.iloc[0, 4:].tolist()
 KEN = wdi_df.iloc[1, 4:].tolist()
@@ -21,7 +21,7 @@ ax.plot(YOI, IND, 'r')
 ax.plot(YOI, KEN, 'k')
 ax.plot(YOI, THA, 'b')
 ax.legend(['India', 'Kenya', 'Thailand'])
-ax.set_ylabel('$N_{2}O$ (% of total)')
+ax.set_ylabel('$N_{2}O$ ($10^{3}$ metric tons)')
 ax.set_xlabel('Year')
-ax.set_title('$N_{2}O$ Emissions in Energy Sector (% of total)')
-plt.show()
+ax.set_title('$N_{2}O$ Emissions in Energy Sector')
+fig.savefig('N2O_v_mton')
