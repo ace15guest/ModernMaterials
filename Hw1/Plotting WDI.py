@@ -17,9 +17,9 @@ YOI = [1971+x for x, it in enumerate(IND)]
 
 fig, ax = plt.subplots()
 
-ax.plot(YOI, IND, 'r')
-ax.plot(YOI, KEN, 'k')
-ax.plot(YOI, THA, 'b')
+ax.plot(YOI, IND, '--')
+ax.plot(YOI, KEN, 'o')
+ax.plot(YOI, THA, '-')
 ax.legend(['India', 'Kenya', 'Thailand'])
 ax.set_ylabel('$N_{2}O$ ($10^{3}$ metric tons)')
 ax.set_xlabel('Year')
